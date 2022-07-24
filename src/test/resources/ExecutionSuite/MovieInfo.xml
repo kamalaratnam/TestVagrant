@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MovieInfo Suite">
+<listeners>
+<listener class-name="com.Utility.ExtentReporterClass"/>
+<listener class-name="com.Utility.ScreenshotListner"/>
+
+</listeners>
+
+  <test name="MovieInfo">
+     <parameter name="IMDBUrl" value="https://www.imdb.com/"/>
+     <parameter name="WikiUrl" value="https://en.wikipedia.org/"/>
+      <parameter name="MovieName" value="Pusha: The Rise"/>
+     
+      <classes>
+      <class name="com.testScripts.MovieInformation"/>
+      </classes>
+  </test> 
+   
+  </suite>

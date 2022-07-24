@@ -39,6 +39,7 @@ public class IMDBPage extends BaseClass{
 		Thread.sleep(1000);
 		System.out.println(SearchResults.size());
 		SearchResults.get(0).click();
+		
 	}
 	public void scroltoElementIMDB()
 	{
